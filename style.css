@@ -190,3 +190,26 @@ main > section.page.is-active{ display:block; }
   .cards, .gallery, .price, .reviews{ grid-template-columns:1fr; }
   .contactGrid{ grid-template-columns:1fr; }
 }
+
+.headerActions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.iconBtn{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  border:1px solid #cbd5e1;
+  background:#fff;
+  color:#0f172a;
+  text-decoration:none;
+}
+
+.iconBtn:hover{
+  background:#f1f5f9;
+}
