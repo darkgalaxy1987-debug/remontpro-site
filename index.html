@@ -69,7 +69,8 @@
           <!-- ФОРМА 1 -> midgard1987@mail.ru -->
           <form class="form" action="https://formsubmit.co/midgard1987@mail.ru" method="POST">
             <input type="hidden" name="_subject" value="Заявка с сайта РемонтПро — Быстрый расчёт">
-            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <input type="hidden" name="source" value="Hero form">
 
             <label>
@@ -78,12 +79,17 @@
             </label>
 
             <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
               Телефон
               <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
             </label>
 
             <button class="btn btn--primary" type="submit">Отправить</button>
-            <div class="small muted">Первый раз FormSubmit пришлёт письмо на midgard1987@mail.ru для подтверждения.</div>
+            <div class="small muted">При первой отправке проверьте почту midgard1987@mail.ru и подтвердите адрес FormSubmit.</div>
           </form>
         </div>
       </div>
@@ -224,14 +230,21 @@
             <!-- ФОРМА 2 -> midgard1987@mail.ru -->
             <form class="form" action="https://formsubmit.co/midgard1987@mail.ru" method="POST">
               <input type="hidden" name="_subject" value="Заявка с сайта РемонтПро — Контакты">
-              <input type="hidden" name="_captcha" value="true">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
               <input type="hidden" name="source" value="Contacts form">
 
               <label>Имя <input type="text" name="name" placeholder="Имя" required /></label>
+
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+
               <label>Телефон <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required /></label>
               <label>Комментарий <textarea name="msg" rows="4" placeholder="Что нужно сделать?"></textarea></label>
               <button class="btn btn--primary" type="submit">Отправить</button>
-              <div class="small muted">Первый раз FormSubmit пришлёт письмо на midgard1987@mail.ru для подтверждения.</div>
+              <div class="small muted">При первой отправке проверьте почту midgard1987@mail.ru и подтвердите адрес FormSubmit.</div>
             </form>
           </div>
         </div>
