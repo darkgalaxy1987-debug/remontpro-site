@@ -26,6 +26,7 @@
         <a href="#contacts">Контакты</a>
       </nav>
 
+      <!-- тестовый телефон на странице -->
       <a class="btn btn--ghost" href="tel:+79990000000">Позвонить</a>
     </div>
   </header>
@@ -54,6 +55,7 @@
             <a class="btn btn--ghost" href="#works">Посмотреть работы</a>
           </div>
 
+          <!-- тестовые контакты на странице -->
           <div class="mini">
             <strong>Телефон:</strong> <a href="tel:+79990000000">+7 (999) 000‑00‑00</a><br>
             <strong>Email:</strong> <a href="mailto:test@example.com">test@example.com</a>
@@ -64,7 +66,12 @@
           <h2>Быстрый расчёт</h2>
           <p class="muted">Оставьте контакты — перезвоним и уточним детали.</p>
 
-          <form class="form" action="#" method="post">
+          <!-- ФОРМА 1 -> midgard1987@mail.ru -->
+          <form class="form" action="https://formsubmit.co/midgard1987@mail.ru" method="POST">
+            <input type="hidden" name="_subject" value="Заявка с сайта РемонтПро — Быстрый расчёт">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="source" value="Hero form">
+
             <label>
               Имя
               <input type="text" name="name" placeholder="Как к вам обращаться" required />
@@ -76,7 +83,7 @@
             </label>
 
             <button class="btn btn--primary" type="submit">Отправить</button>
-            <div class="small muted">Форма без отправки (тестовый режим).</div>
+            <div class="small muted">Первый раз FormSubmit пришлёт письмо на midgard1987@mail.ru для подтверждения.</div>
           </form>
         </div>
       </div>
@@ -160,81 +167,3 @@
               <li>Координация</li>
               <li>Контроль качества</li>
             </ul>
-            <a class="btn btn--ghost" href="#contacts">Рассчитать</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section id="reviews" class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Отзывы</h2>
-          <p class="muted">Несколько реальных впечатлений клиентов.</p>
-        </div>
-
-        <div class="reviews">
-          <article class="review">
-            <p>“Сделали санузел и кухню, всё ровно, сроки соблюли.”</p>
-            <div class="review__by">Анна</div>
-          </article>
-          <article class="review">
-            <p>“Понравилась смета и фотоотчёт, без сюрпризов по оплате.”</p>
-            <div class="review__by">Сергей</div>
-          </article>
-          <article class="review">
-            <p>“Аккуратно, после себя убрали, результат отличный.”</p>
-            <div class="review__by">Марина</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTS -->
-    <section id="contacts" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2>Контакты</h2>
-          <p class="muted">Связь и заявка на расчёт.</p>
-        </div>
-
-        <div class="contactGrid">
-          <div class="card">
-            <h3>Как связаться</h3>
-            <p class="muted">
-              Тел: <a href="tel:+79990000000">+7 (999) 000‑00‑00</a><br>
-              WhatsApp/Telegram: <a href="tel:+79990000000">+7 (999) 000‑00‑00</a><br>
-              Email: <a href="mailto:test@example.com">test@example.com</a><br>
-              Город: Москва и область
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Заявка</h3>
-            <form class="form" action="#" method="post">
-              <label>Имя <input type="text" name="name" placeholder="Имя" required /></label>
-              <label>Телефон <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required /></label>
-              <label>Комментарий <textarea name="msg" rows="4" placeholder="Что нужно сделать?"></textarea></label>
-              <button class="btn btn--primary" type="submit">Отправить</button>
-              <div class="small muted">Форма без отправки (тестовый режим).</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__row">
-      <div class="small muted">© <span id="year"></span> РемонтПро</div>
-      <div class="small muted"><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></div>
-      <div class="small muted"><a href="mailto:test@example.com">test@example.com</a></div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
